@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+    <script src="https://kit.fontawesome.com/909749e7df.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/bootstrap-utilities.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Amita&family=Limelight&family=Merienda&family=Montserrat:ital,wght@0,100;0,200;1,100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Amita&family=Limelight&family=Merienda&family=Montserrat:ital,wght@1,100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Amita&family=Cormorant+Infant:ital,wght@0,400;1,600&family=Limelight&family=Merienda&family=Montserrat:ital,wght@1,100&family=Train+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">  
+
+
+
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Amita&family=Limelight&family=Merienda&family=Montserrat:ital,wght@1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<body>
+  <style>
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(247, 150, 98);
+        opacity: 0.9;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        
+      }
+      </style>
+    
+      <style>
+          
+      .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: rgb(252, 252, 252);
+        display: block;
+        transition: 0.3s;
+      }
+      </style>
+    
+      <style>
+      .sidenav a:hover {
+        color: #351704;
+      }
+      
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+      
+      @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 16px;}
+      }
+      </style>
+      
+     
+      
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="staycations.html">Staycations</a>
+        <a href="places.html">Islands & Resorts</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+    
+        
+    
+    
+    
+    
+    
+      </div>
+      
+      
+      <span style="color: rgb(242, 139, 115); margin-left: 50px;  font-size:30px;cursor:grab;" onclick="openNav()">&#9776; MENU </span>
+      
+      <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+      </script>
+       <div class="container-combine">
+
+         
+        <div> 
+           <img class="logo" src="images/LOGO1-1.png" alt="logo">
+         </div>
+         <div class="container-social" > 
+           <a class="social-log-in"  target="_blank" href="account.html"><i class="far fa-user-circle"></i></a> 
+           <a class="social-fb" target="_blank" href="https://www.facebook.com/"> <i class="fab fa-facebook"></i></a>
+           <a class="social-tw" target="_blank" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+           <a class="social-ln" target="_blank"  href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+           <a class="social-ut" target="_blank" href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+           <a class="social-pin" target="_blank"  href="https://www.pinterest.com/"><i class="fab fa-pinterest-square"></i></a>
+          
+
+        </div>
+
+   </div>
+
+
+
+
+
+
+      <section class="article-box" >
+        <div class="abt-us-box">
+
+         <article class="head-title" >
+
+           <h4 class="about-us-head" > OUR PASSION TO PURPOSE</h4>
+           <p class="about-us-title">We are inspired to curate unique and memorable travel experiences for our clients through our vast experiences and direct connectivity with our tourism & hospitality partners.</p>
+           <p class="about-us-title">We see ourselves as your travel concierge, not an online room booking system or a voucher printer. While it is easy for things to be automated, we put great thought and effort behind every booking and package. We are a human voice you can speak to as we help arrange the A-to-Zs for all your travel needs.</p>
+           <h4 class="about-us-head" >WE GO ALL THE WAY  </h4>
+           <p class="about-us-title" > We continue to work hard and pour our passion into our purpose. We hope to make it to the other side with our heads held high and hearts full. With your support, we can help the Malaysian tourism industry recover and be glorious once more.
+           </p>
+
+
+        </article>
+       </div>
+
+
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <section class="3">
+        <footer> 
+            <div class="footer-wrapper">
+                <div class="footer-content">
+                    <div class="small-box">
+                        <p class="footer-title-1" style="color:white; padding-top: 37px; "  >  QUICK LINKS
+                            <ul class="footer-list" style="padding-top: 30px; color: white; ">
+                                <li>About Us</li>
+                                <li>Insider Benefits</li>
+                                <li>Agent Hub</li>
+                                <li>Privacy policy</li>
+                                <li>Terms & Conditions</li>
+                            
+                            </ul>
+
+                        </p>
+
+
+                    </div>
+                    <div class="middle-box">
+                        <p class="footer-title" style="color: white;  padding-bottom: 17px;" >SIGN UP HERE </p>
+                        <div class="footer-box-big" style="display: flex; " > 
+                            <form action="">
+                                <input type="text"  id="frame" value="email">
+                                
+                            </form>
+
+
+                            <form>
+
+                               <input type="button"  id="frame1" value="SUBSCRIBE" onclick="msg()">
+
+                               <script>
+                                   function msg(){
+                                       alert("error");
+                                   };
+
+                               </script>
+                            </form>
+                        </div>
+
+                       
+                    </div>
+
+                    <div class="big-box">
+                        <p class="footer-title-2" style="color: white;  margin-top: 37px;"> CONTACT US
+                            <ul class="footer-list1" style="color: white">
+                                <li>
+
+                                </li>
+                                <li class="list-fo" style="padding-top: 30px; "> the Travelers Pradise <br>
+                                shaftsbutry Residence, jalan imapact,<br>
+                                cyber 6, 63000, Selangor, Malayia. </li>
+                                <li class="list-for" style="padding-top: 30px; ">Ofice Phone Number : +603 1234 5678  <br> 
+                                    (Mon-fri: 10.00am -17pm) <br>
+                                    Mobile/WhatsAPP : +60 19 409 1234;
+
+                                </li>
+
+                            </ul>
+
+                        </p>
+
+                    </div> 
+                    
+
+                </div>
+                    
+                
+                    <div class="FOOTER-BONUS"  style="  justify-content:space-between; background-color:rgb(208, 175, 175);">
+             
+                    
+                         <i class="far fa-copyright"   style="display: inline-block; margin-left: 70px;"></i>
+                         <p  style="display: inline-block; font-size: 10px;;" > 2021, TRAVELERS_PARADISE </p>
+                      
+                    </div>
+                
+               
+
+
+            </div>
+
+
+
+
+        </footer>
+
+
+
+
+    </section>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+</body>
+</html>

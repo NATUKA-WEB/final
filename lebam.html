@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+    <script src="https://kit.fontawesome.com/909749e7df.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/bootstrap-utilities.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Amita&family=Limelight&family=Merienda&family=Montserrat:ital,wght@0,100;0,200;1,100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Amita&family=Limelight&family=Merienda&family=Montserrat:ital,wght@1,100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Amita&family=Cormorant+Infant:ital,wght@0,400;1,600&family=Limelight&family=Merienda&family=Montserrat:ital,wght@1,100&family=Train+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amita&family=Limelight&family=Merienda&family=Montserrat:ital,wght@1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <title>final-project</title>
+</head>
+<body>
+
+    <style> 
+        [data-tooltip] {
+            position: relative;
+            cursor: default;
+            
+    
+        }
+    
+        [data-tooltip]::after {
+            position: absolute;
+            width: 200px;
+            bottom: 33px;
+            left: calc(10% - 10px);
+            content: attr(data-tooltip);
+           
+            color: rgb(223, 60, 60);
+            /* background-color: rgb(91, 164, 180); */
+            padding: 3px;
+            padding-top: 12px;
+            border-radius: 15px;
+            font-size: 15px;
+            
+            
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity 0.3s; transform: 0.2s;
+    
+    
+        }
+        [data-tooltip]:hover::after {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+    
+    </style>
+    
+    
+    
+    
+    
+    
+    <style>
+        .intext2 {
+            position: absolute;
+            font-size: 20px;
+            padding-left: 90px;
+            font-style: oblique;
+        }
+    
+    </style>
+    
+    <style>
+        .intext3{
+            position: absolute;
+            padding-top: px;
+            font-size: 20px;
+            padding-left: 90px;
+            font-style: oblique;
+        }
+    
+    </style>
+
+    <style>
+        #from {
+            background-image: url(images/calendar.png);
+            position: right;
+            padding-left: 0px;
+            background-size: 16px;
+            background-repeat: no-repeat;
+           
+           
+        }
+
+    </style>
+
+<style>
+    #to {
+        background-image: url(images/calendar.png);
+        position: right;
+        padding-left: 0px;
+        background-size: 16px;
+        background-repeat: no-repeat;
+
+        
+       
+    }
+
+</style>
+<style>
+    #quantity {
+        background-image: url(images/audience.png);
+        position: left;
+        padding-left: 0px;
+        background-size: 16px;
+        background-repeat: no-repeat;
+        
+        
+        
+        
+       
+    }
+
+</style>
+
+<style>
+    #cart-btn {
+        margin-top: 14px;
+    }
+
+
+</style>
+
+<style>
+    #fb-btn {
+        background-image: url(images/facebook.png);
+        position: right;
+        padding-left: 30px;
+        background-size: 15px;
+        background-repeat: no-repeat;
+        background-color: rgb(242, 240, 240)
+    }
+
+
+</style>
+
+<!-- second -->
+
+<style>
+    #twitter-btn {
+        background-image: url(images/twitter.png);
+        position: right;
+        padding-left: 30px;
+        background-size: 15px;
+        background-repeat: no-repeat;
+        background-color: rgb(242, 240, 240)
+    }
+
+
+</style>
+
+
+<!-- 3rd button -->
+
+
+<style>
+    #pin-btn {
+        background-image: url(images/pinterest.png);
+        position: right;
+        padding-left: 30px;
+        background-size: 15px;
+        background-repeat: no-repeat;
+        background-color: rgb(242, 240, 240)
+    }
+
+
+</style>
+
+
+
+
+
+
+
+       
+    </head>
+    <body>
+    
+    
+    
+    
+    <style>
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(247, 150, 98);
+        opacity: 0.9;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        
+      }
+      </style>
+    
+      <style>
+          
+      .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: rgb(252, 252, 252);
+        display: block;
+        transition: 0.3s;
+      }
+      </style>
+    
+      <style>
+      .sidenav a:hover {
+        color: #351704;
+      }
+      
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+      
+      @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 16px;}
+      }
+      </style>
+      
+     
+      
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="staycations.html">Staycations</a>
+        <a href="places.html">Islands & Resorts</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+    
+        
+    
+    
+    
+    
+    
+      </div>
+      
+      
+      <span style="color: rgb(242, 139, 115); margin-left: 50px;  font-size:30px;cursor:grab;" onclick="openNav()">&#9776; MENU </span>
+      
+      <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+      </script>
+    
+      <div class="container-combine">
+    
+         
+           <div> 
+              <img class="logo" src="images/LOGO1-1.png" alt="logo">
+            </div>
+            <div class="container-social" > 
+              <a class="social-log-in"  target="_blank" href="account.html"><i class="far fa-user-circle"></i></a> 
+              <a class="social-fb" target="_blank" href="https://www.facebook.com/"> <i class="fab fa-facebook"></i></a>
+              <a class="social-tw" target="_blank" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+              <a class="social-ln" target="_blank"  href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+              <a class="social-ut" target="_blank" href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+              <a class="social-pin" target="_blank"  href="https://www.pinterest.com/"><i class="fab fa-pinterest-square"></i></a>
+             
+    
+           </div>
+    
+      </div>
+    
+
+        <section >
+            <div class="lebam-section">
+                <div class="lebam-container">
+                    <div class="lebam-pics"></div>
+                    <div style="width: 400px; height: 100px; position: relative; display: flex; justify-content: space-between;">
+                        <div style="width: 100px; height: 100px;">  <a target="_blank" href="images/Sungai Lebam River Cruise Tour with Transfer within Desaru.jpeg"> <img class="img1" style="width: 100px; height: 100px; position: absoulute; margin-top: 450px" src="images/Sungai Lebam River Cruise Tour with Transfer within Desaru.jpeg" alt=""> </a> </div>
+                        <div style="width: 100px; height: 100px;">   <a target="_blank" href="images/l.jpeg">   <img  class="img1" style="width: 100px; height: 100px; position: absoulute; margin-top: 450px" src="images/l.jpeg" alt=""> </a> </div>
+                        <div style="width: 100px; height: 100px;">    <a target="_blank" href="images/lebm1.jpg">    <img  class="img1" style="width: 100px; height: 100px; position: absoulute; margin-top: 450px" src="images/lebm1.jpg" alt=""> </a> </div>
+                        
+                        
+
+                    </div>
+                   
+                </div>
+
+                <div class="booking-container">
+                    <h2>LEBAM RIVER CRUISE</h2>
+                    <P>RM77.00</P>
+                    <P>Per person or per boat</P>
+                    <input type="text" id="name">
+                    <p>From</p>
+                    <input type="text" id="from">
+                    <p>To</p>
+                    <input type="text" id="to" >
+                    <p>Quantity</p>
+                    <input type="text" id="quantity">
+                    <div>
+                        <!-- <button id="TBN-cart"> ADD TO CART</button> -->
+
+                        <form>
+  
+                            <input type="button"  id="cart-btn"  value="ADD TO CART" onclick="msg()">
+
+                            <script>
+                                function msg(){
+                                    alert(" dios mio FAILED");
+                                };
+
+                            </script>
+                         </form>
+                    </div>
+
+                    
+                </div>
+
+            </div>
+
+        </section>
+
+        <section>
+            <div class="box-000"> 
+                <article>
+                    <h3></h3>
+                    <p class="lebam-in-text">From Desaru, a 15 minutes drive to Sungai Lebam, this is a wide river surrounded by a very rich and lush mangrove forest. The drive passes through secondary forests and areas cleared for Agriculture and Palm Oil.
+                    
+                    </p>
+
+                    <p class="lebam-in-text">
+                        “Birds can be spotted especially the Black-Shoulder Kites, Herons and Pacific Swallows.”
+                    </p>
+
+                    <p class="lebam-in-text">
+                        The arrival at the jetty shows a view of a small fishing settlement and a floating restaurant. As the boat gently meanders along the river your guide will unravel the many interesting secrets of this unique ecosystem. You will learn how these bizarre-looking trees have adapted to live in this dynamic and constantly changing environment dictated by the ebb and flow of the ocean tides. Mangroves are also home to a myriad species of animals equally adapted to this ecology.
+                    </p>
+
+                    <h4> NEED TO KNOW</h4>
+
+
+                    <p class="lebam-in-text"> 
+                        &#9745 THEME: Educational River Cruise. <br>
+                        &#9745 Minimum of guests for tour to commerece: 2 <br>
+                        &#9745 Location: Sungai Labam <br>
+                        &#9745 Distance from Desaru: approximatelu 12km  <br>
+                        &#9745 Duration to site: 15 minutes <br>
+                        &#9745 Meeting point: Desaru coast <br>
+                        &#9745 Dificulty level: easy <br>
+                        &#9745 Age: all groups.
+
+                    </p> 
+                    <h4>PACKAGE INCLUSION</h4>
+                    <P> &#9745 English-speaking nature guide <br>
+                        &#9745 Transfer from desaru coast <br>
+                        &#9745 One bottle water.
+
+                    </P>
+                    <h4> SAFE TRAVEL MANAGEMENT</h4>
+                    <P>
+                        It is compulsory to check in on the MySejahtera app and temperature checking before proceeding on the tour. Social distancing rules to be followed according the guidelines of the Mnistry of Health of Malaysia.
+                    </P>
+
+
+                </article>
+                
+                <div class="sharing-btns"   style="width: 300px; display: flex; justify-content: space-between; margin-top: 40px;">
+                    <form action="">
+                        <input type="button" name="facebook" id="fb-btn"  value="SHARE"  onclick="msg()"  >
+
+                        
+                    </form>
+                    <script>
+                        function msg() {
+                            alert("no correcto")
+                        }
+                    </script>
+
+                     <!-- twitter sharing button -->
+
+                     <form action="">
+                        <input type="button" name="twitter" id="twitter-btn"  value="SHARE"  onclick="msg()"  >
+
+                        
+                    </form>
+                    <script>
+                        function msg() {
+                            alert("no correcto")
+                        }
+                    </script>
+
+                    <!-- pinterest sharing button -->
+
+                    <form action="">
+                        <input type="button" name="pin it" id="pin-btn"  value="SHARE"  onclick="msg()"  >
+
+                        
+                    </form>
+                    <script>
+                        function msg() {
+                            alert("no correcto")
+                        }
+                    </script>
+
+
+
+
+
+
+
+
+
+
+                </div>
+
+                
+
+
+
+            </div>
+
+
+            <div class="new-box" style="width: 150px; height: 100px; font-size: 30px; margin-top: 40px; margin-left: 700px;   display: flex; justify-content: space-between; position: relative;" > 
+                    <i  style="padding-top: 10px;" class="fas fa-arrow-left"></i>
+                    <a  target="_blank" href="johor.html">BACK</a> 
+                    
+                </div>
+
+
+        </section>
+        <section class="3">
+          <footer> 
+              <div class="footer-wrapper">
+                  <div class="footer-content">
+                      <div class="small-box">
+                          <p class="footer-title-1" style="color:white; padding-top: 37px; font-size: 20px;"  >  QUICK LINKS
+                              <ul class="footer-list" style="padding-top: 30px; color: white; font-size:15px;">
+                                  <li>About Us</li>
+                                  <li>Insider Benefits</li>
+                                  <li>Agent Hub</li>
+                                  <li>Privacy policy</li>
+                                  <li>Terms & Conditions</li>
+                              
+                              </ul>
+  
+                          </p>
+  
+  
+                      </div>
+                      <div class="middle-box">
+                          <h3 class="footer-title" style="color: white; font-size: 20px; padding-bottom: 17px;" >SIGN UP TO RECEIVE THE LATEST OFFERS! </h3>
+                          <div class="footer-box-big" style="display: flex; " > 
+                              <form action="">
+                                  <input type="text"  id="frame" value="email">
+                                  
+                              </form>
+  
+  
+                              <form>
+  
+                                 <input type="button"   value="SUBSCRIBE" onclick="msg()">
+  
+                                 <script>
+                                     function msg(){
+                                         alert("Dios mío, FAILED!");
+                                     };
+  
+                                 </script>
+                              </form>
+                          </div>
+  
+                         
+                      </div>
+  
+                      <div class="big-box">
+                          <p class="footer-title-2" style="color: white; font-size:20px; margin-top: 37px;"> CONTACT US
+                              <ul class="footer-list1" style="color: white">
+                                  <li>
+  
+                                  </li>
+                                  <li class="list-fo" style="padding-top: 30px; font-size: 15px;"> the Travelers Pradise <br>
+                                  shaftsbutry Residence, jalan imapact,<br>
+                                  cyber 6, 63000, Selangor, Malayia. </li>
+                                  <li class="list-for" style="padding-top: 30px; font-size: 15px;">Ofice Phone Number : +603 1234 5678  <br> 
+                                      (Mon-fri: 10.00am -17pm) <br>
+                                      Mobile/WhatsAPP : +60 19 409 1234;
+  
+                                  </li>
+  
+                              </ul>
+  
+                          </p>
+  
+                      </div>
+  
+                  </div>
+  
+  
+              </div>
+  
+  
+  
+  
+          </footer>
+  
+  
+  
+  
+      </section>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <script src="js/script.js" ></script>
+
+</body>
+</html>

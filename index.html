@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Cpmpatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/909749e7df.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/bootstrap-utilities.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css
+    ">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+    <title>final-project</title>
+
+    <style> 
+        [data-tooltip] {
+            position: relative;
+            cursor: default;
+            
+
+        }
+
+        [data-tooltip]::after {
+            position: absolute;
+            width: 200px;
+            bottom: 33px;
+            left: calc(10% - 10px);
+            content: attr(data-tooltip);
+           
+            color: rgb(223, 60, 60);
+            /* background-color: rgb(91, 164, 180); */
+            padding: 3px;
+            padding-top: 12px;
+            border-radius: 15px;
+            font-size: 15px;
+            
+            
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity 0.3s; transform: 0.2s;
+   
+
+        }
+        [data-tooltip]:hover::after {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+    </style>
+
+    
+
+
+
+
+    <style>
+        .intext2 {
+            position: absolute;
+            font-size: 20px;
+            padding-left: 90px;
+            font-style: oblique;
+        }
+    
+    </style>
+
+    <style>
+        .intext3{
+            position: absolute;
+            padding-top: px;
+            font-size: 20px;
+            padding-left: 90px;
+            font-style: oblique;
+        }
+
+    </style>
+       
+</head>
+<body>
+   
+
+
+
+<style>
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(247, 150, 98);
+        opacity: 0.9;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        
+      }
+      </style>
+
+      <style>
+          
+      .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: rgb(252, 252, 252);
+        display: block;
+        transition: 0.3s;
+      }
+      </style>
+
+      <style>
+      .sidenav a:hover {
+        color: #351704;
+      }
+      
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+      
+      @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 16px;}
+      }
+      </style>
+      
+     
+      
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="staycations.html">Staycations</a>
+        <a href="places.html">Islands & Resorts</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+
+        
+
+
+
+
+
+      </div>
+      
+      
+      <span style="color: rgb(242, 139, 115); margin-left: 50px;  font-size:30px;cursor:grab;" onclick="openNav()">&#9776; MENU </span>
+      
+      <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+      </script>
+
+      <div class="container-combine">
+
+         
+           <div> 
+              <img class="logo" src="images/LOGO1-1.png" alt="logo">
+            </div>
+            <div class="container-social" > 
+              <a class="social-log-in"  target="_blank" href="account.html"><i class="far fa-user-circle"></i></a> 
+              <a class="social-fb" target="_blank" href="https://www.facebook.com/"> <i class="fab fa-facebook"></i></a>
+              <a class="social-tw" target="_blank" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+              <a class="social-ln" target="_blank"  href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+              <a class="social-ut" target="_blank" href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+              <a class="social-pin" target="_blank"  href="https://www.pinterest.com/"><i class="fab fa-pinterest-square"></i></a>
+             
+
+           </div>
+
+      </div>
+
+<!-- article section -->
+
+
+
+    <!-- <h3>  <a class="title" href="index.html"> travelers paradise </a></h3> -->
+    
+    
+    <div class="carousel-container">
+            <i class="fas fa-arrow-circle-right" id=nextBtn></i>
+            <i class="fas fa-arrow-alt-circle-left"id="prevBtn"  ></i>
+        <div class="carousel-slide">
+            <!-- <img src="images/two.jpg" id="lasClone" alt=""> -->
+            <img class="slide" src="images/one.jpg" alt="langkawi">
+                 
+      
+             <!-- <img class="slide1" src="images/kl.jpeg" alt="">  -->
+
+
+            <img class="slide" src="images/three.jpg" alt="tioman-isle">
+            <img class="slide" src="images/street art.JPG"streetart">
+            <img class="slide" src="images/ck-yeo-5J6VUR6r9Wc-unsplash.jpg"kuala lumpur alt="kl">
+            <img class="slide"  src="images/boy.JPG" alt="boy">
+            <img class="slide" src="images/kl.jpeg"   alt="kl">
+           
+           
+            <img class="slide" src="images/two.jpg" alt="genting">
+            <!-- <img src="images/one.jpg" id="firsClone" alt=""> -->
+
+        </div>
+       
+    </div>
+    <!-- <button id="prevBtn">Prev</button>
+    <button id="nextBtn">Next</button> -->
+    <script src="app.js"></script>
+
+    <div class="section1">
+        <div class="travelers-info">
+            <div class="hotels">
+                <img class="hotelone" src="images/hotel-2.png"   alt="hotel">
+             
+                <!-- <i class="fas fa-hotel" style="color: orange;   margin-left: 140px; margin-top: 20px; padding-bottom: 60px; width: 100px; "></i> -->
+                <p class="paragraph1"> Expensive doesn't always mean cheap. <span style="color: rgb(223, 179, 96); font-weight: bold;  padding-top: 100px; "> <a  class="inner-text;"  href="staycations.html">DOWN</a> </span> below  everything for your comfort zone </p>
+
+                <button class="button1">MORE</button>
+
+            </div>
+
+
+            <!-- restaurant div -->
+
+            <div class="eat">
+                <img class="hotelone" src="images/restaurant.png" alt=""restaurnt>
+                <p class="paragraph1" >  food corners. worthy to visit while being in Malaysia  </p>
+                <button class="button1">MORE</button>
+
+                    
+            </div>
+            
+            <!-- <div class="transport" >
+                <img class="taxi" src="images/pin.png" alt="taxi">
+                <p class="paragraph2" >  Transports and alternative ways of traveling are due to option.Find a flexible transport type fits your lifestyle</p>
+                <button class="button1" >MORE</button>
+   
+            </div> -->
+
+
+            <div class="eat">
+                <img class="hotelone" src="images/pin.png" alt=""restaurnt>
+                <p class="paragraph1" >  transports and alternative ways of traveling.   <a target="_blank" href="staycations.html">transport</a>       type fits your lifestyle  </p>
+                <button class="button1">MORE</button>
+
+                    
+            </div>
+
+
+
+
+
+
+
+
+
+        </div>
+
+    </div>
+
+    <div class="container-block">
+        <div class="line" style="text-align:center"  >
+            <!-- <p class="12"> MALAYSIA  <span class="2">(<em>32.7 million inhabitants</em>)</span> welcomes over 25 million tourists per year  </p>
+             -->
+
+
+
+
+
+
+             <p class="topic-title-11" style=" text-align: justify; text-justify: inter-word;    padding-top: 50px;   padding-left: 150px;  position: absolute; ""  >   <strong style="flex: 100%"  >HIDDEN   TREASURE AMONGST THE ISLANDS</strong> </p>
+
+            <p class="intext"  style="  text-align: justify; text-justify: inter-word;   padding-top: 100px; font-style: oblique;   padding-left: 0px;" > <span class="test" data-tooltip="32.7 million inhabitants" > MALAYSIA</span> is  final destination for over 25 million tourists per year. DISCOVER the true paradise amongst dozen islands, a golden sand, true tropical rainforest and a nature with its own and unique magical appearance you can only see once in a lifetime. 
+                </p>
+            <p class=" intext2 " style="   padding-top: 16px;" > Sparkling sunrays on a Langkawi beach will leave the same excitement as an old “Fort Cornwallis” in a Penang  Island or the  Malacca’s centuries old Portuguese church.   </p>  
+            <p class="intext3"    style="     padding-top: 110px"> And the last but not the finals, why shall one stop by and visit Malaysia? Multiculturalism should sound quite e reason. Mixed cultures, mixed traditions, a divinely delicious food and breathtaking architectures that show you how many cultures combinedly perfected if not mastered art with its various forms.  </p>  
+            <p class="intext4" style="    padding-top: 250px">  Discovering Malaysia as a true diamond of Asia might mark you with an adventure you could   have possibly only dreamed about.  </p>
+
+
+        </div>
+
+    </div>
+
+    <section  class="middle"  style="flex-wrap: wrap ; max-width: 100%; width: 1400px;">  
+        <div class="offers">
+            
+            <div class="section-container"> 
+             
+               
+                    <div class="price">
+                        <img class="money" src="images/wallet.png" alt="wallet">
+                        <h5 class="PRICE1" style=" padding-top: 10px;  padding-bottom: px;  padding-left: 50px; " >ALL INCLUSIVE PRICES </h5>
+                        <p class="p12" style=" padding-top: 10px;  padding-left: 30px;    "> Our listed prices are inclusive of all service <br> and GST charges. No surprises at checkout! </br> </p>
+
+                    </div>
+
+
+                    <div class="mountain">
+                       <img class="m-icon" src="images/mountain.png" alt="mountain">
+                       <h5 class="PRICE1" style=" padding-top: 10px;  padding-bottom: 10px;  padding-left: 50px;"  >CUSTOMISABLE</h5>
+                       <p class="p123"  style=" padding-top: 10px;  padding-left: 10px;   "  >We know, the best bits around Malaysia for that unique experience you aspire. Reach out to us if you are looking for something not on our website/ we will work with you on the most creative itineraries and get you great prices. </p>
+                    </div>
+
+
+                    <div class="team" >
+                        <img class="money" src="images/teamwork-2.png" alt="team">
+                        <h5 class="team-work" style=" padding-top: 10px;  padding-bottom: 10px;  padding-left: 50px;"  > REAL PEOPLE</h5>
+                        <p class="p1234" style=" padding-top: 10px;  padding-left: 10px; "   > Stop banging away in anger at an AL chat bot? Speak to one of our really intelligent holidy designers! </p>
+                    </div>
+
+            </div>
+           
+    
+        </div>
+   </section>
+
+   <section class="section-2" > 
+       <p class="ttl" style="margin-bottom: 70px; margin-left: 260px; color:rgb(200, 158, 97) "  > <b class="late">LATEST PICTURES</b> </p>
+        <div class="responsive-container">
+            <div class="gallery">
+                <p class="box-title" > Goddess Kali temple</p>
+                <a target="_blank" href="images/collage/temple.jpg">
+                    <img class="collage-box" src="images/collage/temple.jpg" alt="temple"> </a>
+
+            </div>
+
+
+
+
+            <div class="gallery"> 
+                <p class="box-title" >Genting Highland at night</p>
+                <a target="_blank" href="images/collage/genting-view.jpg">
+                    <img class="collage-box" src="images/collage/genting-view.jpg" alt=""> </a>
+
+            </div>
+
+            
+
+
+
+            <div class="gallery">
+                <p class="box-title" >putrajaya bridge</p>
+                <a target="_blank" href="images/collage/putrajaya-bridge.jpg">
+                    <img class="collage-box" src="images/collage/putrajaya-bridge.jpg" alt="putrajaya"> </a>
+              
+            </div>
+
+            <!-- second-box -->
+        
+
+
+            <div class="gallery">
+                <p class="box-title" >Eagle square atlangwaki isle</p>
+                <a target="_blank" href="images/collage/eagle.jpg">
+                <img class="collage-box" src="images/collage/eagle.jpg" alt="eagle"  width: "200" height= "200"></a>
+
+            </div>
+
+            <!-- 3rd-box -->
+
+
+            <div class="gallery">
+                <p class="box-title" >George town Port</p>
+                <a target="_blank" href="images/collage/bonsai.jpg">
+                <img class="collage-box" src="images/collage/bonsai.jpg" alt="bonsai" width: "200" height= "200"  ></a>
+             
+            </div>
+
+            
+        </div>
+
+     
+    </section>
+
+
+    <!-- footer -->
+
+
+    <section class="3">
+        <footer> 
+            <div class="footer-wrapper">
+                <div class="footer-content">
+                    <div class="small-box">
+                        <p class="footer-title-1" style="color:white; padding-top: 37px; "  >  QUICK LINKS
+                            <ul class="footer-list" style="padding-top: 30px; color: white; ">
+                                <li>About Us</li>
+                                <li>Insider Benefits</li>
+                                <li>Agent Hub</li>
+                                <li>Privacy policy</li>
+                                <li>Terms & Conditions</li>
+                            
+                            </ul>
+
+                        </p>
+
+
+                    </div>
+                    <div class="middle-box">
+                        <p class="footer-title" style="color: white;  padding-bottom: 17px;" >SIGN UP HERE </p>
+                        <div class="footer-box-big" style="display: flex; " > 
+                            <form action="">
+                                <input type="text"  id="frame" value="email">
+                                
+                            </form>
+
+
+                            <form>
+
+                               <input type="button"  id="frame1" value="SUBSCRIBE" onclick="msg()">
+
+                               <script>
+                                   function msg(){
+                                       alert("error");
+                                   };
+
+                               </script>
+                            </form>
+                        </div>
+
+                       
+                    </div>
+
+                    <div class="big-box">
+                        <p class="footer-title-2" style="color: white;  margin-top: 37px;"> CONTACT US
+                            <ul class="footer-list1" style="color: white">
+                                <li>
+
+                                </li>
+                                <li class="list-fo" style="padding-top: 30px; "> the Travelers Pradise <br>
+                                shaftsbutry Residence, jalan imapact,<br>
+                                cyber 6, 63000, Selangor, Malayia. </li>
+                                <li class="list-for" style="padding-top: 30px; ">Ofice Phone Number : +603 1234 5678  <br> 
+                                    (Mon-fri: 10.00am -17pm) <br>
+                                    Mobile/WhatsAPP : +60 19 409 1234;
+
+                                </li>
+
+                            </ul>
+
+                        </p>
+
+                    </div> 
+                    
+
+                </div>
+                    
+                
+                    <div class="FOOTER-BONUS"  style="  justify-content:space-between; background-color:rgb(208, 175, 175);">
+             
+                    
+                         <i class="far fa-copyright"   style="display: inline-block; margin-left: 70px;"></i>
+                         <p  style="display: inline-block; font-size: 10px;;" > 2021, TRAVELERS_PARADISE </p>
+                      
+                    </div>
+                
+               
+
+
+            </div>
+
+
+
+
+        </footer>
+
+
+
+
+    </section>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+</body>
+</html>

@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+    <script src="https://kit.fontawesome.com/909749e7df.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/bootstrap-utilities.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css
+    ">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <title>final-project</title>
+</head>
+<body>
+  
+  <style> 
+    [data-tooltip] {
+        position: relative;
+        cursor: default;
+        
+
+    }
+
+    [data-tooltip]::after {
+        position: absolute;
+        width: 200px;
+        bottom: 33px;
+        left: calc(10% - 10px);
+        content: attr(data-tooltip);
+       
+        color: rgb(223, 60, 60);
+        /* background-color: rgb(91, 164, 180); */
+        padding: 3px;
+        padding-top: 12px;
+        border-radius: 15px;
+        font-size: 15px;
+        
+        
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.3s; transform: 0.2s;
+
+
+    }
+    [data-tooltip]:hover::after {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+</style>
+
+
+
+
+
+
+<style>
+    .intext2 {
+        position: absolute;
+        font-size: 20px;
+        padding-left: 90px;
+        font-style: oblique;
+    }
+
+</style>
+
+<style>
+    .intext3{
+        position: absolute;
+        padding-top: px;
+        font-size: 20px;
+        padding-left: 90px;
+        font-style: oblique;
+    }
+
+</style>
+   
+</head>
+<body>
+
+
+
+
+<style>
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(247, 150, 98);
+    opacity: 0.9;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    
+  }
+  </style>
+
+  <style>
+      
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(252, 252, 252);
+    display: block;
+    transition: 0.3s;
+  }
+  </style>
+
+  <style>
+  .sidenav a:hover {
+    color: #351704;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 16px;}
+  }
+  </style>
+  
+ 
+  
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html">Home</a>
+    <a href="staycations.html">Staycations</a>
+    <a href="places.html">Islands & Resorts</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+
+    
+
+
+
+
+
+  </div>
+  
+  
+  <span style="color: rgb(242, 139, 115); margin-left: 50px;  font-size:30px;cursor:grab;" onclick="openNav()">&#9776; MENU </span>
+  
+  <script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+  </script>
+
+  <div class="container-combine">
+
+     
+       <div> 
+          <img class="logo" src="images/LOGO1-1.png" alt="logo">
+        </div>
+        <div class="container-social" > 
+          <a class="social-log-in"  target="_blank" href="account.html"><i class="far fa-user-circle"></i></a> 
+          <a class="social-fb" target="_blank" href="https://www.facebook.com/"> <i class="fab fa-facebook"></i></a>
+          <a class="social-tw" target="_blank" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+          <a class="social-ln" target="_blank"  href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+          <a class="social-ut" target="_blank" href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+          <a class="social-pin" target="_blank"  href="https://www.pinterest.com/"><i class="fab fa-pinterest-square"></i></a>
+         
+
+       </div>
+
+  </div>
+
+
+
+
+    <!-- <div > <a target="_blank" href=""> <i class="far fa-user-circle"</a> ></i></div>  -->
+    <!--  -->
+   
+
+    <section class="page-container">
+      <div class="page-container122">
+        <div class="rest-section">
+          
+             <h4 style="font-size: 48px; letter-spacing: 01cm; color: rgb(115, 115, 223)"> MALAYSIA </h4>
+              <P style="font-size: 20px; color: rgb(126, 38, 208);">HOTELS AND MOTELS <BR>
+              
+              DIRECTORY 2021</BR></P>
+
+              <div class="rest-box">
+
+                  <div class="hotels-box" >
+                     <div class="danna-hotel" >
+                       
+                        <a target="_blank" href="images/hotels/danna langkavi.jpeg ">   <img class="hotel1"  src="images/hotels/danna langkavi.jpeg" alt="lkw hotels"> </a>
+                     <p class="innn-text" > <a href="https://goo.gl/maps/7AsPYHaZtFH3nZrS9">THE DANNA langkavi</a>  </p>
+                     <P>The setting,rooms and staff 
+                        are  top <br>class. The only problem 
+                        is you re ruined <br>for life. forever 
+                        more you are saying: " <br>It's not 
+                         as good as the Danna" </P>
+                     <p> Location: Jalan pantai kok,
+                        telega <br>harbour park, langkawi 07000 <br>
+                        Hotline: 04-059-3288</p>   
+                     </div>
+                     <!-- genting hotel div -->
+                     <div class="divider" style="width: 750px; height: 2px; background-color: lightgray; margin-top: 30px;">
+
+                     </div>
+
+
+                     <div class="genting-hotel">
+                        <a target="_blank" href="images/hotels/genting hotel.png"> <img class="hotel2" src="images/hotels/genting hotel.png" alt=" genting-hotel"></a>
+                       <p class="innn-text">  <a target="_blank" href="https://goo.gl/maps/XJ7M4rBjX3BMZFqx8">Your hotel Genting highlands</a>  </p>
+                       <p> your hotel Genting Highland offers simple and comfy accommodations with free wifi access. it provides complimentary parking on site.</p>
+                       <p> Location: No.51 Jalan Jatil, Goh Tong Jaya, 69000 Genting highlands</p>
+
+                     </div>
+
+                     <div class="divider" style="width: 750px; height: 2px; background-color: lightgray; margin-top: 30px;"></div>
+
+                     
+
+
+                     <div class="cheong-hotel" > 
+                       <a target="_blank" href="images/hotels/cheong hotel.jpeg"> <img class="hotel3" src="images/hotels/cheong hotel.jpeg" alt="cheong hotel"></a>
+                       <p class="innn-text" >   <a  target="_blank" href="https://g.page/cheongfatttzemansion?share">Cheong fatt tze mansion</a>  </p>
+                       <p> Built in the 1880s, this famous indigo-blue Chinese Courtyard  house in Georgetown was the residence of Cheong Fatt tze, used theior skills to fashio mansion with 38 rooms, 5 granite-opaved cortyards, 7 staircases and 220 windows.</p>
+                       <p> Location: 14, Lebuh leith , 10200</p>
+
+                     </div>
+
+                     <div class="divider" style="width: 750px; height: 2px; background-color: lightgray; margin-top: 30px;"></div>
+
+
+                     <div class="malacca-hotel" > 
+                       <a target="_blank" href="images/hotels/melaka.jpeg"> <img class="hotel4" src="images/hotels/melaka.jpeg" alt="malacca"></a>
+                       <p class="innn-text" >  <a  target="_blank" href="https://goo.gl/maps/WFGxWo8K2hqLMmZQ8">Melaka Hotel Puri</a> </p>
+                       <p> Hotel puri in Malacca in peninsular Malaysia, the ambiance of the hotel lived up to your expectations with its beautiful old foyer, antique furniture and lovely peaceful courtyard.</p>
+                       <p> Location : 118 Jalan Tun Tan cheng lock, Persiaram Jonker, Melaka 75200</p>
+
+
+                     </div>
+                     
+
+
+
+
+
+                  </div>
+
+                 <div class="transport-box"> 
+                   
+                    
+                 </div>
+
+
+                <div class="title-row-box" >   
+                  <div class="row-box1" style="margin-left: 70px;" > 
+
+
+                    
+                    <h4 style="font-size: 20px; margin-left: 30px; color:rgb(0, 0, 0)" >CATEGORIES</h4>
+                    <div class="box1" >
+                      <i   class="fas fa-long-arrow-alt-right" style="font-size: 20px; margin-left: 10px; color: rgb(121, 121, 230)"  ></i>
+                      <p class="nit"  >Luxurious Hotels</p>
+
+
+                    </div>
+
+
+
+
+
+                    <div class="box1" >
+                      <i   class="fas fa-long-arrow-alt-right" style="font-size: 20px; margin-left: 10px; color: rgb(121, 121, 230)"  ></i>
+                      <p class="nit"  >Easy to live in</p>
+                    </div>
+
+
+                    <div class="box1"  >
+                      <i   class="fas fa-long-arrow-alt-right" style="font-size: 20px; margin-left: 10px; color: rgb(121, 121, 230)"  ></i>
+                      <p class="nit"  >cheap and comfy</p>
+                    </div>
+                    <div class="box1" >
+                      <i   class="fas fa-long-arrow-alt-right" style="font-size: 20px; margin-left: 10px; color: rgb(121, 121, 230)"  ></i>
+                      <p class="nit"  >Good neighborhood </p>
+                    </div> 
+                    <div class="box1" >
+                      <i   class="fas fa-long-arrow-alt-right" style="font-size: 20px; margin-left: 10px; color: rgb(121, 121, 230)"  ></i>
+                      <p class="nit"  >Motels</p>
+                    </div>
+                    <div class="box1" >
+                      <i   class="fas fa-long-arrow-alt-right" style="font-size: 20px; margin-left: 10px; color: rgb(121, 121, 230)"  ></i>
+                      <p class="nit"  >China-town</p>
+                    </div>
+                    <div class="archive"  style="margin-top: 150px; margin-left: 40px; line-height: 1cm; "  > 
+                      <h3 style="margin-left: 40px;">ARCHIVE</h3>
+                      <div class="box1">
+                        
+                        <i   class="fas fa-long-arrow-alt-right" style="font-size: 20px; margin-left: 10px; color: rgb(121, 121, 230)"  ></i>
+                      <p class="nit"  > <a href="#">JULY 2021</a> </p>
+                      </div>
+                      <div class="box1">
+                        <i   class="fas fa-long-arrow-alt-right" style="font-size: 20px; margin-left: 10px; color: rgb(121, 121, 230)"  ></i>
+                        <p class="nit"  >  <a href="#"> JUNE 2021</a>  </p>
+                      </div>
+                      <div class="box1" >
+                        <i   class="fas fa-long-arrow-alt-right" style="font-size: 20px; margin-left: 10px; color: rgb(121, 121, 230)"  ></i>
+                        <p class="nit"  >    <a href="#">MAY 2021</a> </p>
+                      </div>
+                      <div class="box1" >
+                        <i   class="fas fa-long-arrow-alt-right" style="font-size: 20px; margin-left: 10px; color: rgb(121, 121, 230)"  ></i>
+                        <p class="nit"  >  <a href="#">APRIL 2021</a> </p>
+                      </div>
+                      <div class="box1" >
+                        <i   class="fas fa-long-arrow-alt-right" style="font-size: 20px; margin-left: 10px; color: rgb(121, 121, 230)"  ></i>
+                        <p class="nit"  >  <a href="#">MARCH 2021</a> </p>
+                      </div>
+                      <div class="box1" >
+                        <i   class="fas fa-long-arrow-alt-right" style="font-size: 20px; margin-left: 10px; color: rgb(121, 121, 230)"  ></i>
+                        <p class="nit"  >  <a href="#">FEBRUARY 2021</a> </p>
+                      </div>
+                      <div class="box1" >
+                        <i   class="fas fa-long-arrow-alt-right" style="font-size: 20px; margin-left: 10px; color: rgb(121, 121, 230)"  ></i>
+                        <p class="nit"  >  <a href="#"> JANUARY 2021</a></p>
+                      </div>
+                      <div class="box1" >
+                        <i   class="fas fa-long-arrow-alt-right" style="font-size: 20px; margin-left: 10px; color: rgb(121, 121, 230)"  ></i>
+                        <p class="nit"  >  <a href="#">DECEMBER 2020</a> </p>
+                      </div>
+
+
+
+
+                    </div>
+
+
+                    
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  </div>
+
+                  
+                
+                
+                </div>
+
+
+              </div>
+            <div class="divider" ></div>
+
+            <div class="transportation">
+              <h5 style="margin-top: 40px; margin-left: 100px; font-size: 30px; color:rgb(101, 93, 194)" > TRANSPORT</h5>
+              <div class="transports" >
+                <div class="ktm"  style="margin-bottom: 30px; position: relative; display: flex ;"  > 
+                  <img class="transprt" src="images/transports/ktm komuter.png" alt="tkm buss">
+                  <!-- <p> KTM Komuter</p> -->
+                    
+                  <p  style=" margin-top: 50px; margin-left: 30px; font-size: 20px;   ">  <span style="margin-left: 30px; font-size: 30px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif" >KTM Komuter</span>   <br>
+
+                    KTM Komuter is a commuter  train service in Malaysia operated by Keretapi Tinah Melayu (KTMB). It was introduced in 1995 to provide local rain service in Kula Lumpur and the surrounding Klang Valley suburban areas .The train used are air-conditioned electric multirole units. “Park and Ride” facilities are provided at stations at nominal charge. </p>
+                  
+                </div>
+                <div class="gokl" style="margin-bottom: 30px; position: relative; display: flex;" >
+                <img class="transprt" src="images/transports/go kl city bus.jpeg" alt="kl buss">
+                <p style=" margin-top: 50px; margin-left: 30px; font-size: 20px;" > <span style="margin-left: 30px; font-size: 30px; " > Go KL City Buss</span>
+                  <br>
+                  Its’s a smarter and save money way to travel whole KL. Go-KL city buss is a free service for visitors and residents as well. comfortable air-conditioned, pink coloured single-deck buses now cruise two circular routes covering many of the main sight-seeing attractions in the heart of the city .</p>
+                
+                </div>
+
+
+                <div class="lrt" style="margin-bottom: 30px; position: relative; display: flex; "  >
+                  <img class="transprt" src="images/transports/lrt.jpeg" alt="klbuss">
+                  <p style="margin-top: 50px;  margin-left: 30px; font-size: 20px; "   >   <span style=" margin-left:30px; font-size: 30px;  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"> LRT</span>  <br>
+                    Taking a ride on LRT or light rail transit train is easy. When you are in the station, read the rote <a href="images/transports/klang-valley-integrated-transit-map-lrt-mrt.jpeg">map</a>   to locate where you are and  decide where to go.  purchase the ticket or the train token. You can use “touch and go” if you prefer.  </p>
+                  
+                </div>
+                <div class="rent"  style="position: relative; display: flex;">
+                  <img class="transprt"  src="images/transports/car rent.jpeg" alt="car rent">
+                  <p style=" margin-top: 50px; margin-left: 30px; font-size: 20px;  ">  <span  style="margin-left: 30px; font-size: 30px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; " >CAR RENTAL</span>  <br>
+                   If you want drive in Malaysia its’s better way to choose car rental!.
+                   Hotline of rental car:
+                   KL Car Rental : 03-6411 6216
+                   Car-Asia Travel: 03-51-3 0533
+                   </p>
+                  
+                </div>
+
+
+
+              </div>
+
+
+
+
+            </div>
+            
+                   
+
+
+      </div>
+     
+      
+
+
+    </section>
+    <section class="3">
+      <footer> 
+          <div class="footer-wrapper">
+              <div class="footer-content">
+                  <div class="small-box">
+                      <p class="footer-title-1" style="color:white; padding-top: 37px; font-size: 20px;"  >  QUICK LINKS
+                          <ul class="footer-list" style="padding-top: 30px; color: white; font-size:15px;">
+                              <li>About Us</li>
+                              <li>Insider Benefits</li>
+                              <li>Agent Hub</li>
+                              <li>Privacy policy</li>
+                              <li>Terms & Conditions</li>
+                          
+                          </ul>
+
+                      </p>
+
+
+                  </div>
+                  <div class="middle-box">
+                      <h3 class="footer-title" style="color: white; font-size: 20px; padding-bottom: 17px;" >SIGN UP TO RECEIVE THE LATEST OFFERS! </h3>
+                      <div class="footer-box-big" style="display: flex; " > 
+                          <form action="">
+                              <input type="text"  id="frame" value="email">
+                              
+                          </form>
+
+
+                          <form>
+
+                             <input type="button"   value="SUBSCRIBE" onclick="msg()">
+
+                             <script>
+                                 function msg(){
+                                     alert("error");
+                                 };
+
+                             </script>
+                          </form>
+                      </div>
+
+                     
+                  </div>
+
+                  <div class="big-box">
+                      <p class="footer-title-2" style="color: white; font-size:20px; margin-top: 37px;"> CONTACT US
+                          <ul class="footer-list1" style="color: white">
+                              <li>
+
+                              </li>
+                              <li class="list-fo" style="padding-top: 30px; font-size: 15px;"> the Travelers Pradise <br>
+                              shaftsbutry Residence, jalan imapact,<br>
+                              cyber 6, 63000, Selangor, Malayia. </li>
+                              <li class="list-for" style="padding-top: 30px; font-size: 15px;">Ofice Phone Number : +603 1234 5678  <br> 
+                                  (Mon-fri: 10.00am -17pm) <br>
+                                  Mobile/WhatsAPP : +60 19 409 1234;
+
+                              </li>
+
+                          </ul>
+
+                      </p>
+
+                  </div>
+
+              </div>
+
+
+          </div>
+
+
+
+
+      </footer>
+
+
+
+
+  </section>
+
+   
+
+   
+
+
+  
+
+
+
+
+
+    
+
+    
+</body>
+</html>

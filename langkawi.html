@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+    <script src="https://kit.fontawesome.com/909749e7df.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/bootstrap-utilities.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css
+    ">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Amita&family=Limelight&family=Merienda&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Amita&family=Limelight&family=Merienda&family=Montserrat:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
+
+
+
+
+    <title>final-project</title>
+    <link rel="stylesheet" href="slick/slick.css">
+    <link href="https://kenwheeler.github.io/slick/slick/slick-theme.css" rel="stylesheet"/>
+
+   
+
+
+</head>
+  
+
+<body>
+    <style> 
+        [data-tooltip] {
+            position: relative;
+            cursor: default;
+            
+    
+        }
+    
+        [data-tooltip]::after {
+            position: absolute;
+            width: 200px;
+            bottom: 33px;
+            left: calc(10% - 10px);
+            content: attr(data-tooltip);
+           
+            color: rgb(223, 60, 60);
+            /* background-color: rgb(91, 164, 180); */
+            padding: 3px;
+            padding-top: 12px;
+            border-radius: 15px;
+            font-size: 15px;
+            
+            
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity 0.3s; transform: 0.2s;
+    
+    
+        }
+        [data-tooltip]:hover::after {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+    
+    </style>
+    
+    
+    
+    
+    
+    
+    <style>
+        .intext2 {
+            position: absolute;
+            font-size: 20px;
+            padding-left: 90px;
+            font-style: oblique;
+        }
+    
+    </style>
+    
+    <style>
+        .intext3{
+            position: absolute;
+            padding-top: px;
+            font-size: 20px;
+            padding-left: 90px;
+            font-style: oblique;
+        }
+    
+    </style>
+       
+    </head>
+    <body>
+    
+    
+    
+    
+    <style>
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(247, 150, 98);
+        opacity: 0.9;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        
+      }
+      </style>
+    
+      <style>
+          
+      .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: rgb(252, 252, 252);
+        display: block;
+        transition: 0.3s;
+      }
+      </style>
+    
+      <style>
+      .sidenav a:hover {
+        color: #351704;
+      }
+      
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+      
+      @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 16px;}
+      }
+      </style>
+      
+     
+      
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="staycations.html">Staycations</a>
+        <a href="places.html">Islands & Resorts</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+    
+        
+    
+    
+    
+    
+    
+      </div>
+      
+      
+      <span style="color: rgb(242, 139, 115); margin-left: 50px;  font-size:30px;cursor:grab;" onclick="openNav()">&#9776; MENU </span>
+      
+      <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+      </script>
+      <div class="container-combine">
+
+         
+        <div> 
+           <img class="logo" src="images/LOGO1-1.png" alt="logo">
+         </div>
+         <div class="container-social" > 
+           <a class="social-log-in"  target="_blank" href="account.html"><i class="far fa-user-circle"></i></a> 
+           <a class="social-fb" target="_blank" href="https://www.facebook.com/"> <i class="fab fa-facebook"></i></a>
+           <a class="social-tw" target="_blank" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+           <a class="social-ln" target="_blank"  href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+           <a class="social-ut" target="_blank" href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+           <a class="social-pin" target="_blank"  href="https://www.pinterest.com/"><i class="fab fa-pinterest-square"></i></a>
+          
+
+        </div>
+
+   </div>
+
+
+
+
+       
+            <div class="maindiv"> 
+
+            </div>
+            <!-- <p  class=" margin-top: 500px;margin-left: 300px;" >n</p> -->
+             <section class="bgcover">
+           
+            <DIV  class="L-TITLE-BOX">
+                <div class="ltitle" >
+                    <h4 class="tripttl" > TRIP INTO HEAVEN</h4>
+                    <p class="lltitlee" >Every woman likes diamond. If you have a passion of a sea or a beach Langkawi is a place you should visit to. Scuba diving, rare crocodile farm. Rich view of an amazing island, always blue sky, special coffee and magnificent sea. They are just less part of a huge list of what this magical island can give to you.</p>
+                    <p class="ltitleee" >Why the travelers should pick Langkawi? Maybe because of various choices you have to do first? Is not necessary to love sea or the sunny weather. Magnificent slightly humid air, amazing sunset and special coffee made in  the “yellow café” will never let the visitors to forget about the island.</p>
+                </div>
+                <div class="lpic" >
+                    <div class="l-little"  style="display: flex; ">
+                        <img class="llpic" src="images/3.jpg" alt="lkw">
+                        
+                        <img class="llpic3" src="images/langkawi page/1.jpg" alt="">
+                   </div>
+                   <h3 style="margin-bottom: 50px; margin-left: 200px;" >CHENANG BEACH</h3>
+
+                    <img class="llpic2" src="images/langkawi page/IMG_20150427_182649.jpg" alt="">
+                    <!-- <p   >  <b style="margin-left: 00px; " >Chenang beach</b> </p> -->
+                </div>
+                
+            </DIV>
+            
+
+
+            </div>
+
+
+        </section>
+
+        <section class="direct">
+            <div class="directory" style="background-color: rgb(240, 230, 230);" >   
+                <div class="directions">
+                    <div class="offerings">
+                        <h1 style="font-family: 'Amita', cursive; color:rgb(206, 99, 99)" > OUR OFFERES</h1>
+                        <P style="font-family: 'Amita', cursive; color: green" >airport car rent</P>
+                        <div style="background-color: lightsalmon; width: 190px; " >
+                            <p style="color:white; padding-left: 20px; font-weight: bold; font-family: 'Limelight', cursive;;" > SAVETY TRAVEL</p>
+                        </div>
+                        
+
+                        <div class="mini-offrs">
+                            <img class="mini-pics" src="images/website-photo.jpeg" alt="klia car-rent">
+                            <p style="font-family: 'Amita', cursive; color: green;"> AIRPORT CAR RENT <BR >
+                                choose the way you want to travel by.</p>
+                        </div>
+
+                        <div class="mini-offrs" >
+                            <img  class="mini-pics" src="images/hotelroom.jpg" alt="hotel">
+                            <p class="mini-titles" > know your wish and let us know too, to make your dream place affordabe and comfortable.</p>
+                        </div>
+                        <div class="mini-offrs" > 
+                            <img  class="mini-pics" src="images/airasia.png" alt="airasia">
+                            <p class="mini-titles" >  <span style="color: red; font-weight: bolder; font-style: italic; " >Air Asia </span> <br >
+                            your comfort, our flight.world's best low-cost airlanes. 6 times champions</p>
+                           
+                        </div>
+                        <div class="mini-offrs-1" style="display: flex;" >
+                            <img style="width: 180px; height: 180px; border-radius: 9rem"  src="images/grabcar.jpg" alt="grabcar">
+                            <p class="mini-titles1" >make it easy, make it safe. choose the road, choose the driver/</p>
+                        </div>
+                        <div class="mini-offrs" >
+                            <img class="mini-pics" src="images/langkawi-motel.jpg" alt="lkw-motel">
+                            <p class="mini-titles" >best low-costed motel in langkawi. proces from RM70 a day. a direct view to the ocean and at the right before chenang beach. </p>
+                        </div>
+                        <div class="mini-offrs" >
+                            <p style="margin-top: 50px; margin-bottom: 20px;color: rgb(22, 145, 67); font-family: 'Amita', cursive;">  give us yourb idea and we will give you the best price. save the money and get chip resort in a good price.  <br>
+                            langkawi. hotels</p>
+                            <div class="feedback-part" >
+                                <p class="mini-titles-finals"> For more information feel free to contact our office from 10am-17pm every day or visit our official Facebook page . Know more and enjoy better. contact us on our e-mail, give us your feedback or your questions and we will guide you inside a truly travelers world. Discover your own paradise and find a place you want to disappear in, your wish comes true withing our paradise. <br>
+                                www.travelers-paradise.com <br>
+                               <p>travelers_paradise </p>
+
+
+
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+                    </div>
+
+                    <div style="background-color: white;" class="mgz-type">
+                        <div class="diving" >
+                            <h1 style="color:rgb(206, 99, 99) ;font-family: 'Amita', cursive; " >  Under The Sea</h1>
+                            <p class="diving-title"> What makes an island special is its excellent diving opportunity, the most rich and expensive underwater world of Langkawi that keeps visitors coming back over and over. Where can you see such magical life? 99 archipelagos underwater world makes you surprise every time you will go down to the heart of an ocean, clear and untouchable world. Swimming side by side with all sea inmates and see a world they live in is most amazing feeling every visitor should feel.</p>
+                            <img  style="width: 400px; height: 200px; margin-top: 30px; margin-left: 100px;" src="images/diving.jpg" alt="diving">
+                        </div>
+                        <h1 style="color:tomato; margin-left: 110px; margin-bottom: 20px; font-family: 'Merienda', cursive; " > TEST YOUR FEAR</h1>
+                        <div class="croco" style="display: flex;" >
+                            
+                            <p class="croco-title" >if you are brave enough to take a picture with crocodiles, then the crocodile farm is the right place for you. You can feed them from your hand, walk with them and just be in the company with crocodiles. Do you like wild life? Dangerous, or hazardous? Then go directly to the crocodile farm and check the scale of your fear.</p>
+                            <img class="crocodile-img"   " src="images/langkawi page/crocodile farm.jpg" alt="crocodile farm">
+
+
+                        </div>
+                        <div class="paraceiling">
+                            <h2  style="color:tomato; margin-left: 110px; margin-bottom: 20px; font-family: 'Merienda', cursive; " >PARASAILING</h2>
+                            <p class="diving-title" > True seekers of adrenalin never miss parasailing. enjoy with an amazing view above the sea and feel every single breath near the sky, 130 metters from the sea level.</p>
+                            <video style=" width="320" height="300" controls>
+                                <source src="images/paraceiling.mp4" type="video/mp4">
+                                <source src="" type="video/paraceiling">
+                                
+                              </video>
+
+
+
+                        </div>
+
+                        <!--  -->
+                        <div class="klw-map"  style="400px;">
+                            <img  class="lkw-map-pic"   src="images/langkawi page/lkw-map.jpg" alt="tourist-map">
+                            <a target="_blank" href="https://ontheworldmap.com/malaysia/islands/langkawi/langkawi-tourist-map.html"> LANGKAWI TOURIST MAP</a>
+
+                        </div>
+                          
+                        
+
+                    </div>
+
+
+                </div>
+
+
+
+
+
+
+            </div>
+
+            <!--  -->
+
+            
+
+
+
+
+
+
+
+
+
+
+        </section>
+
+        <div class="new-box" style="width: 150px; height: 100px; font-size: 30px; margin-top: 40px; margin-left: 700px;   display: flex; justify-content: space-between; position: relative;" > 
+            <i  style="padding-top: 10px;" class="fas fa-arrow-left"></i>
+            <a  target="_blank" href="places.html">BACK</a> 
+            
+        </div>
+
+        
+        
+    
+
+         
+
+
+
+
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <section class="3">
+          <footer> 
+              <div class="footer-wrapper">
+                  <div class="footer-content">
+                      <div class="small-box">
+                          <p class="footer-title-1" style="color:white; padding-top: 37px; font-size: 20px;"  >  QUICK LINKS
+                              <ul class="footer-list" style="padding-top: 30px; color: white; font-size:15px;">
+                                  <li>About Us</li>
+                                  <li>Insider Benefits</li>
+                                  <li>Agent Hub</li>
+                                  <li>Privacy policy</li>
+                                  <li>Terms & Conditions</li>
+                              
+                              </ul>
+  
+                          </p>
+  
+  
+                      </div>
+                      <div class="middle-box">
+                          <h3 class="footer-title" style="color: white; font-size: 20px; padding-bottom: 17px;" >SIGN UP TO RECEIVE THE LATEST OFFERS! </h3>
+                          <div class="footer-box-big" style="display: flex; " > 
+                              <form action="">
+                                  <input type="text"  id="frame" value="email">
+                                  
+                              </form>
+  
+  
+                              <form>
+  
+                                 <input type="button"   value="SUBSCRIBE" onclick="msg()">
+  
+                                 <script>
+                                     function msg(){
+                                         alert("error");
+                                     };
+  
+                                 </script>
+                              </form>
+                          </div>
+  
+                         
+                      </div>
+  
+                      <div class="big-box">
+                          <p class="footer-title-2" style="color: white; font-size:20px; margin-top: 37px;"> CONTACT US
+                              <ul class="footer-list1" style="color: white">
+                                  <li>
+  
+                                  </li>
+                                  <li class="list-fo" style="padding-top: 30px; font-size: 15px;"> the Travelers Pradise <br>
+                                  shaftsbutry Residence, jalan imapact,<br>
+                                  cyber 6, 63000, Selangor, Malayia. </li>
+                                  <li class="list-for" style="padding-top: 30px; font-size: 15px;">Ofice Phone Number : +603 1234 5678  <br> 
+                                      (Mon-fri: 10.00am -17pm) <br>
+                                      Mobile/WhatsAPP : +60 19 409 1234;
+  
+                                  </li>
+  
+                              </ul>
+  
+                          </p>
+  
+                      </div>
+  
+                  </div>
+  
+  
+              </div>
+  
+  
+  
+  
+          </footer>
+  
+  
+  
+  
+      </section>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="slick.min.js"></script>
+      <script  src="script.js"   ></script>
+  
+
+
+      
+  
+
+        
+    
+</body>
+</html>

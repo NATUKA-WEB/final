@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+    <script src="https://kit.fontawesome.com/909749e7df.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/bootstrap-utilities.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Amita&family=Limelight&family=Merienda&family=Montserrat:ital,wght@0,100;0,200;1,100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Amita&family=Limelight&family=Merienda&family=Montserrat:ital,wght@1,100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Amita&family=Cormorant+Infant:ital,wght@0,400;1,600&family=Limelight&family=Merienda&family=Montserrat:ital,wght@1,100&family=Train+One&display=swap" rel="stylesheet">
+
+
+
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Amita&family=Limelight&family=Merienda&family=Montserrat:ital,wght@1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+    <title>final-project</title>
+</head>
+<body>
+    <style> 
+        [data-tooltip] {
+            position: relative;
+            cursor: default;
+            
+    
+        }
+    
+        [data-tooltip]::after {
+            position: absolute;
+            width: 200px;
+            bottom: 33px;
+            left: calc(10% - 10px);
+            content: attr(data-tooltip);
+           
+            color: rgb(223, 60, 60);
+            /* background-color: rgb(91, 164, 180); */
+            padding: 3px;
+            padding-top: 12px;
+            border-radius: 15px;
+            font-size: 15px;
+            
+            
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity 0.3s; transform: 0.2s;
+    
+    
+        }
+        [data-tooltip]:hover::after {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+    
+    </style>
+    
+    
+    
+    
+    
+    
+    <style>
+        .intext2 {
+            position: absolute;
+            font-size: 20px;
+            padding-left: 90px;
+            font-style: oblique;
+        }
+    
+    </style>
+    
+    <style>
+        .intext3{
+            position: absolute;
+            padding-top: px;
+            font-size: 20px;
+            padding-left: 90px;
+            font-style: oblique;
+        }
+    
+    </style>
+       
+    </head>
+    <body>
+    
+    
+    
+    
+    <style>
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(247, 150, 98);
+        opacity: 0.9;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        
+      }
+      </style>
+    
+      <style>
+          
+      .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: rgb(252, 252, 252);
+        display: block;
+        transition: 0.3s;
+      }
+      </style>
+    
+      <style>
+      .sidenav a:hover {
+        color: #351704;
+      }
+      
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+      
+      @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 16px;}
+      }
+      </style>
+      
+     
+      
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="staycations.html">Staycations</a>
+        <a href="places.html">Islands & Resorts</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+    
+        
+    
+    
+    
+    
+    
+      </div>
+      
+      
+      <span style="color: rgb(242, 139, 115); margin-left: 50px;  font-size:30px;cursor:grab;" onclick="openNav()">&#9776; MENU </span>
+      
+      <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+      </script>
+
+      <div class="container-combine">
+
+         
+        <div class="small-container-combine"> 
+           <img class="logo" src="images/LOGO1-1.png" alt="logo">
+         </div>
+         <div class="container-social" > 
+           <a class="social-log-in"  target="_blank" href="account.html"><i class="far fa-user-circle"></i></a> 
+           <a class="social-fb" target="_blank" href="https://www.facebook.com/"> <i class="fab fa-facebook"></i></a>
+           <a class="social-tw" target="_blank" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+           <a class="social-ln" target="_blank"  href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+           <a class="social-ut" target="_blank" href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+           <a class="social-pin" target="_blank"  href="https://www.pinterest.com/"><i class="fab fa-pinterest-square"></i></a>
+          
+
+        </div>
+
+   </div>
+
+
+        
+        <div id="slider">
+            <input type="radio" name="slider" id="slide1" checked>
+            <input type="radio" name="slider" id="slide2">
+            <input type="radio" name="slider" id="slide3">
+            <input type="radio" name="slider" id="slide4">
+            <div id="slides">
+               <div id="overflow">
+                  <div class="inner">
+                     <div class="slide slide_1">
+                        <div class="slide-content">
+                           <img class="content-pic"  src="images/penang/welcome.JPG" alt="welcome">
+ 
+                        </div>
+                     </div>
+                     <div class="slide slide_2">
+                        <div class="slide-content">
+                          <img class="content-pic-2" src="images/penang/fort.JPG" alt="fort-cornvalis">
+                          
+                           
+                        </div>
+                     </div>
+                     <div class="slide slide_3">
+                        <div class="slide-content">
+                           <img class="slide-content-1" src="images/penang/penang1.JPG"">
+                          
+                        </div>
+                     </div>
+                     <div class="slide slide_4">
+                        <div class="slide-content">
+                           <img  class="content-pic" src="images/penang/four.jpg" alt="">
+                           
+                        </div>
+                     </div>
+                  </div>
+                  
+               </div>
+            </div>
+            <div id="controls">
+               <label for="slide1"></label>
+               <label for="slide2"></label>
+               <label for="slide3"></label>
+               <label for="slide4"></label>
+               
+            </div>
+            <div id="bullets">
+               <label for="slide1"></label>
+               <label for="slide2"></label>
+               <label for="slide3"></label>
+               <label for="slide4"></label>
+               
+            </div>
+         </div>
+         <h3  style="font-family: 'Cormorant Infant', serif;  font-size: 40px; margin-top: 100px; margin-left: 200px; " >TOP  DESTINATIONS</h3>
+
+
+
+
+
+
+         <section >
+             <div class="my-big-container">
+                 
+                <div class="container-pen">
+                    <img class="my-responsive-image" src="images/four.jpg" alt="boy">
+                    <div class="overlay">
+                        <h1 class="new-text" style="font-size: 15px; font-weight: bolder; margin-left: 50px; color: rgb(18, 17, 17);">STREET ART </h1>
+                        <p class="text" > Streets were painted by the Lithuanian artist Ernest 	Zacharevich with humor and sarcasm.  Unique painting walls mimicking life in the city and the wrought-iron caricatures  with anecdotal and funny descriptions pf the street that they adorn.</p>
+                        
+                     </p>
+                    </div>
+                </div>
+
+
+                
+                
+
+
+
+
+
+               
+              
+                 <div class="container-middle-0">
+                    <img class="my-responsive-image1" src="images/overlay pics/cornvalis.JPG" alt="fort-cornvalis">
+                    <div class="overlay1">
+                        <h1 class="new-text" style="font-size: 15px; font-weight: bolder; margin-left: 50px; color: rgb(18, 17, 17);"> FORT CORNVALIS</h1>
+                        <p class="text1"> Fort Cornwallis is one of historical place in 	Penang made by captain of British army   <a   href="https://en.wikipedia.org/wiki/Francis_Light">Francis Light Beckon</a>          to protect British royal artillery from possible French attacks. The fort was completed in 1810 and later became administrative base for British troops in Penang.  Some of the cell rooms now are galleries displaying historical facts, artifacts and conservative efforts.
+                        
+
+                        </p> 
+                    </div>
+                      
+                 </div> 
+
+
+
+
+
+               <div class="container-middle-1">
+                        <img class="my-responsive-image2" src="images/penang/penang1.JPG" alt="beach">
+                         <div class="overlay2">
+                         <h1 class="new-text"    style="font-size: 15px; font-weight: bolder;  font-family: 'Cormorant Infant', serif; margin-left: 50px; color: rgb(18, 17, 17);"" >BATU FERINGH BEACH</h1>
+                         <p class="text2"   style="font-family: 'Cormorant Infant', serif;" >One of Penang’s most popular destinations (in fact, it’s the second most popular destination after Georgetown), Batu Ferringhi consists of a long stretch of soft, white sandy beach along a winding road named Jalan Batu Ferringhi, filled with a host of accommodation and dining options.
+
+                        Its night market is quite legendary, while its waters are popular spots for a range of water sports activities such as jet-skiing, parasailing and windsurfing</p>  
+                    </div>
+                    
+                      
+                </div>
+            </div>
+
+             
+
+
+         </section>
+
+         <div class="container-penang-middle-section" >
+             <div class="solid-title"> GEORG  TOWN  
+             <div class="penang-map"> 
+                <div style=" width:300px; margin-top: 10px; margin-left: 1px;" ">
+                    <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63553.16509551732!2d100.27432689136599!3d5.405878896232254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304ac397ad2b7bd5%3A0x239ae45978a9b934!2sGeorge%20Town%2C%20Penang%2C%20Malaysia!5e0!3m2!1sen!2sge!4v1622537791023!5m2!1sen!2sge" width="300" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    
+                </div>
+               
+            </div>
+
+            </div>
+
+                <!-- space for larg article + paragraphs
+                 -->
+
+             <div class="container-penang-solid-text"> 
+                 <article>
+                     <h3 style="font-family: 'Cormorant Infant', serifc;  color:rgb(46, 7, 24); font-size: 40px; margin-bottom: 30px;" > ISLE OF SUNRISE</h3>
+                     <p class="penang-solid-one">  If tropical climate is your vocation or in a cold winter you want to enjoy with an ocean sparkling sun rays, you cannot miss Penang, for it will help your dream make true.
+
+                     </p>
+                     <p class="penang-solid-one"> Penang is special island, where strong Asian and subtle European culture cross each other. Unique eastern architecture, Asian culture and updated historical reality will force visitors to come back to Penang once more.</p>
+                     <p class="penang-solid-one">Fort Cornwallis will guide you in the past days of Malaysia. visually presents history and condition of Penang in 18th century. “Little India” and “China town” will present the visitors coexistence of two different culture with their tradition, cuisine, believes and art.</p>
+                     <p class="penang-solid-one">The city hall, Batik painting museum and Jubila clock tower are Penang’s pure modern history. Very creative street art is telling interesting stories via pictures. “Penang state museum art & gallery”, “National Park” and unique botanic garden are visual proofs of rich natural wonders of Penang. As the saying goes “ROME DO AS ROMANS DO” Penang Street food also works in the same way. It’s a combination of Chinese, Malay and Indian fast food. All served in a matter of minutes. </p>
+
+
+                 </article>
+
+
+                  <!-- space for pictures -->
+             </div>
+
+             <!-- space for pictures -->
+             <div class="penang-s0lid-pics">
+
+                <h5 style="font-family: 'Cormorant Infant', serif; font-size: 22px; color:rgb(46, 7, 24); margin-bottom: 40px; margin-left: 40px;" >OUR GALLERY</h5>
+                <div class="penang-solid-box">
+                    <a target="_blank" href="images/penang/gallery/kl-zoo.jpg">
+                    <img class="penang-solid-box-pic" src="images/penang/gallery/kl-zoo.jpg" alt="zoo"></a>
+                    <a  target="_blank" href="images/penang/gallery/street art.JPG"">
+                    <img  class="penang-solid-box-pic" src="images/penang/gallery/street art.JPG" alt="st-art"></a>
+                    
+                   
+                </div>
+                <div class="penang-solid-box-2">
+                    <a target="_blank" href="images/penang/gallery/penang.jpg">
+                    <img class="penang-solid-box-pic" src="images/penang/gallery/penang.jpg" alt=""></a>
+                    <a  target="_blank" href="images/penang/penang1.JPG">
+                    <img class="penang-solid-box-pic" src="images/penang/penang1.JPG" alt=""></a>
+                  
+                </div>
+
+               
+               
+             </div>
+
+
+         </div>
+
+         <div class="container-penang-last-section" >
+             <div class="filans-1">
+                 <h1  class="main-title-penang"> STREETS OF GEORGE TOWN</h1>
+                 <P  class="georg-town-title" >  Experience the unique charms inside George Town city, where even streets are telling stories about Penang Island. And even more, corners do have stories to tell or two. Old streets with some newly reconstructed streets are making a new face of Penang with an old charm. Walk inside the streets and discover a true heart of Penang with its different multicultural, Chinese, Indian and native Malay stocks. Better join.    <a target="_blank" href="https://www.tripadvisor.com/Attractions-g298302-Activities-c42-t183-Penang.html">guided walking tours</a>     or do  <a target="_blank" href="https://www.tripadvisor.com/AttractionProductReview-g660694-d19441627-Penang_Old_Street_Food_Tour_Breakfast_Brunch_Lunch_by_Bicycle_and_Trishaw-Penang_I.html">green wheels</a>    via a bicycle or    <a target="_blank" href="https://www.viator.com/tours/Penang/Penang-Highlights-by-Trishaw-from-George-Town/d339-41375P32">trishaw ride</a>  to discover more and know more. </P>
+                 <img class="penang-last-section-pic1"  src="images/penang/STREET ART12.JPG" alt="STREET ART">
+
+             </div>
+
+
+             <div class="filans-1">
+                 <h1  class="main-title-penang">KEK LOK SI TEMPLE</h1>
+                 <P  >  Huge bells of the temple that rivals even those of Notre Dame speaks of temple’s glory while fearsome stone dragons and lions stand guard over the holy sanctuary and its devotee. temple bears testament of some 200 years of pious devotion. Temple is called  as   <a  target="_blank" href="http://www.penang.ws/penang-attractions/kek-lok-si.htm">“KEK LOK SI”</a>   .  During 1800 the temple was the most magical Chinese structures in northern of malaya which could boast of both carotenes and hokkien elements in its amazing construction. </P>
+                 <img  class="temple-img"  src="images/penang/kek lok si.jpeg" alt="kek-lok-si temple">
+
+
+
+
+             </div>
+             <div class="filans-1"> 
+                 <h1 class="main-title-penang" > CITY HALL</h1>
+                 <p>     <a target="_blank" href="https://mypenang.gov.my/culture-heritage/directory/384/?lg=en">City hall</a>  is placed in the center of Georg Town. An amazing building makes a special view of a city. Mixed with different culture, now the building is currently occupied by the local council.  With its British Palladian architecture featuring amazing Corinthian columns and early Middle Ages design created very emotional background for the visitors. City hall was opened in 1906.  </p>
+                 <img class="CITY-HALL-PIC" src="images/penang/city hall.jpg" alt="CITY HALL">
+             </div>
+             
+
+         </div>
+
+
+
+         <div class="new-box" style="width: 150px; height: 100px; font-size: 30px; margin-top: 40px; margin-left: 700px;   display: flex; justify-content: space-between; position: relative;" > 
+            <i  style="padding-top: 10px;" class="fas fa-arrow-left"></i>
+            <a  target="_blank" href="places.html">BACK</a> 
+            
+        </div>
+
+
+         <section class="3">
+            <footer> 
+                <div class="footer-wrapper">
+                    <div class="footer-content">
+                        <div class="small-box">
+                            <p class="footer-title-1" style="color:white; padding-top: 37px; font-size: 20px;"  >  QUICK LINKS
+                                <ul class="footer-list" style="padding-top: 30px; color: white; font-size:15px;">
+                                    <li>About Us</li>
+                                    <li>Insider Benefits</li>
+                                    <li>Agent Hub</li>
+                                    <li>Privacy policy</li>
+                                    <li>Terms & Conditions</li>
+                                
+                                </ul>
+    
+                            </p>
+    
+    
+                        </div>
+                        <div class="middle-box">
+                            <h3 class="footer-title" style="color: white; font-size: 20px; padding-bottom: 17px;" >SIGN UP TO RECEIVE THE LATEST OFFERS! </h3>
+                            <div class="footer-box-big" style="display: flex; " > 
+                                <form action="">
+                                    <input type="text"  id="frame" value="email">
+                                    
+                                </form>
+    
+    
+                                <form>
+    
+                                   <input type="button"   value="SUBSCRIBE" onclick="msg()">
+    
+                                   <script>
+                                       function msg(){
+                                           alert("La equivocación!");
+                                       };
+    
+                                   </script>
+                                </form>
+                            </div>
+    
+                           
+                        </div>
+    
+                        <div class="big-box">
+                            <p class="footer-title-2" style="color: white; font-size:20px; margin-top: 37px;"> CONTACT US
+                                <ul class="footer-list1" style="color: white">
+                                    <li>
+    
+                                    </li>
+                                    <li class="list-fo" style="padding-top: 30px; font-size: 15px;"> the Travelers Pradise <br>
+                                    shaftsbutry Residence, jalan imapact,<br>
+                                    cyber 6, 63000, Selangor, Malayia. </li>
+                                    <li class="list-for" style="padding-top: 30px; font-size: 15px;">Ofice Phone Number : +603 1234 5678  <br> 
+                                        (Mon-fri: 10.00am -17pm) <br>
+                                        Mobile/WhatsAPP : +60 19 409 1234;
+    
+                                    </li>
+    
+                                </ul>
+    
+                            </p>
+    
+                        </div>
+    
+                    </div>
+    
+    
+                </div>
+    
+    
+    
+    
+            </footer>
+    
+    
+    
+    
+        </section>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="slick.min.js"></script>
+        <script  src="script.js"   ></script>
+    
+
+         
+
+
+
+    
+</body>
+</html>

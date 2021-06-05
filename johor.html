@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+    <script src="https://kit.fontawesome.com/909749e7df.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/bootstrap-utilities.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css
+    ">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+    
+    
+
+    <title>final-project</title>
+</head>
+<body>
+    <style> 
+        [data-tooltip] {
+            position: relative;
+            cursor: default;
+            
+    
+        }
+    
+        [data-tooltip]::after {
+            position: absolute;
+            width: 200px;
+            bottom: 33px;
+            left: calc(10% - 10px);
+            content: attr(data-tooltip);
+           
+            color: rgb(223, 60, 60);
+            /* background-color: rgb(91, 164, 180); */
+            padding: 3px;
+            padding-top: 12px;
+            border-radius: 15px;
+            font-size: 15px;
+            
+            
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity 0.3s; transform: 0.2s;
+    
+    
+        }
+        [data-tooltip]:hover::after {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+    
+    </style>
+    
+    
+    
+    
+    
+    
+    <style>
+        .intext2 {
+            position: absolute;
+            font-size: 20px;
+            padding-left: 90px;
+            font-style: oblique;
+        }
+    
+    </style>
+    
+    <style>
+        .intext3{
+            position: absolute;
+            padding-top: px;
+            font-size: 20px;
+            padding-left: 90px;
+            font-style: oblique;
+        }
+    
+    </style>
+       
+    </head>
+    <body>
+    
+    
+    
+    
+    <style>
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(247, 150, 98);
+        opacity: 0.9;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        
+      }
+      </style>
+    
+      <style>
+          
+      .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: rgb(252, 252, 252);
+        display: block;
+        transition: 0.3s;
+      }
+      </style>
+    
+      <style>
+      .sidenav a:hover {
+        color: #351704;
+      }
+      
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+      
+      @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 16px;}
+      }
+      </style>
+      
+     
+      
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="staycations.html">Staycations</a>
+        <a href="places.html">Islands & Resorts</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+    
+        
+    
+    
+    
+    
+    
+      </div>
+      
+      
+      <span style="color: rgb(242, 139, 115); margin-left: 50px;  font-size:30px;cursor:grab;" onclick="openNav()">&#9776; MENU </span>
+      
+      <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+      </script>
+    
+      <div class="container-combine">
+    
+         
+           <div> 
+              <img class="logo" src="images/LOGO1-1.png" alt="logo">
+            </div>
+            <div class="container-social" > 
+              <a class="social-log-in"  target="_blank" href="account.html"><i class="far fa-user-circle"></i></a> 
+              <a class="social-fb" target="_blank" href="https://www.facebook.com/"> <i class="fab fa-facebook"></i></a>
+              <a class="social-tw" target="_blank" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+              <a class="social-ln" target="_blank"  href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+              <a class="social-ut" target="_blank" href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+              <a class="social-pin" target="_blank"  href="https://www.pinterest.com/"><i class="fab fa-pinterest-square"></i></a>
+             
+    
+           </div>
+    
+      </div>
+    
+
+        <div class="header ">
+            <div class="header-wrapper">
+                <div class="header-title"> 
+                    <h4 style="font-size: 50px;"> JOHOR</h4>
+                </div>
+            
+            </div>
+        </div>
+
+        <div class="title-box123"> 
+            <article class="article1">
+                <h3 class="head-1-title" style="position: absolute; text-shadow: rgb(63, 56, 108);  color: #cb8888; padding-top: 10px; padding-left: 50px; "  >Discover The Jewel Of The South </h3>
+            
+                <p class="title-05"> Johor is Malaysia’s most populous state and a growing economic power player. Most travelers literally skip it but those who stray into the southern gateway to Malaysia will be rewarded with the blissful islands and wild jungles.
+                <h3 class="head-1-title-1"> Why shold you visit Johor?</h3>   
+                <p class="title-051"> There can be a lot of questions why Johor? Why should you visit the city? What make the city special or what to see once you are there? How Johor can be listed among other Malaysia’s most visited cities? Actually, it’s not. Especially if not long ago the town was totally empty and was even out called as a jungle, till its nature wasn’t discovered by visitors.  </p> 
+
+
+                </p>
+
+
+            </article>
+
+
+        </div>
+
+        <div class="section-container2-1">
+           
+            <div class="container-middle1"> 
+               <div style=" width:400px">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1020740.314359909!2d102.94950035574537!3d2.0491758391118675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31c4cc3289eddb9f%3A0x7b6b329bbf0cadb4!2sJohor%2C%20Malaysia!5e0!3m2!1sen!2sge!4v1622123325589!5m2!1sen!2sge" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+               </div>
+    
+                
+            
+              
+               
+
+                
+                <div  class="responsive-section-container-middle-2" >
+                    <div style="background-color: rgb(255, 174, 13); width: 400px; height: auto;">
+                        
+
+                    </div>
+
+                  
+                
+                    <div class="container-wrapper-box-middle">
+                        
+                        <article class="container-wraper">  
+                            <h3 class="wrapper-box-title1"> Discover tropical wild nature!</h3>
+                            <p class="wrapper-box-title2" >Like all Malaysia Johor have a tropical and wild nature, what makes tourists to visit the town. Maybe city can’t be proud wit kts big travel history but it can certainly be proud of its amazing and very old architecture dating back from 1600. </p>
+                            <p class="wrapper-box-title2"  > If almost all Malaysian cities have new. May say reconstructed and rebuilding history, it doesn’t apply to Johor. It has its own history, culture, deeply clear Asian line mixed with an Eastern culture. An amazing tropical jungle, beautiful wild nature, an amazing beach, botanic garden and historical heritages that are part of the places one shall see here. </p>
+                          
+                        </article>
+                        <div class="container-picture1">
+                            <h3  style="color:#cb8888;" >Buildings are telling the stories</h3>
+                            <p>  <img src="images/old-chinese-temple.jpg" alt="old temple" style=" width: 200px; height: auto; margin-top: 10px; margin-left: 100px; float: right; transform: rotateZ(10deg)"> An old Chinese temple is the oldest temple in Johor built during 19th century. The temple unites five Chinese dialects each of whom favor a different deity with its own statue in the temple.  
+                            </p>
+
+                            <h3 style="margin-left: 10px;"  >GLASS TEMPLE </h3>
+                            
+                            <p class="tester"  style="margin-right: 40px;"> <img src="images/glass-temple.jpg" alt="indian temple" style="width: 200px; height: auto; margin-top: 10px; margin-right: 100px; margin-left: 10px; float: left; "  > Arulmigu Sri Rajakaliamman glass temple, is major Hindi temple. The temple was built in 1922 and is decorated with glass from inside and outside. This is first and only temple in the world made by glass and is especially beautiful in the sunny weather, when all temple is shining and sparkling with sun rays. The temple has café that serves vegetarian meals for special events
+                            </p>
+                            
+                        </div>
+
+
+
+
+                    </div>
+
+
+                    <!-- paragraph and pic.3 pic and a whole row size title -->
+                </div>
+
+                
+                
+            </div>
+
+           
+
+
+
+
+
+        </div>
+
+        <section >
+            <div style="width: 1200px; height: 5px; margin-left: 200px; background-color:rgb(220, 209, 209)">
+
+            </div>
+            <div class="sec-container" >
+                <!-- 1 -->
+                <div  class="travel-box" style="width: 300px; height: 300px; " > 
+                    <img style="max-width:100%;width: 400px; height: 220px " src="images/labam.jpeg" alt="lebam cruise">
+                    <p > JOHOR</p>
+                    <p> <a href="lebam.html"> <b>LEBAM RIVER CRUISE</b></a></p>
+                    <P>RM75.00</P>
+                </div>
+
+                <!-- 2 -->
+
+                <div class="travel-box" style="width: 300px; height: 300px; " >
+                    <img style="max-width:100%; width: 400px; height: 220px; " src="images/sedili.png" alt="sedilicruise">
+                    <p > JOHOR</p>
+                    <p> <a href="sedili.html"> <b>SEDILI RIVER CRUISE</b></a></p>
+                    <P>RM100.00</P>
+                    
+
+                </div>
+
+                 <!-- 3 -->
+                <div class="travel-box" style="width: 300px; height: 300px; "  >
+                    <img style="max-width:100%; width: 400px;width: 400px; height: 220px " src="images/desaru.jpeg" alt="desaru cruise">
+                    <p > JOHOR</p>
+                    <p> <a href="lebam.html"> <b>LEBAM RIVER CRUISE</b></a></p>
+                    <P>RM75.00</P>
+                    
+                </div>
+
+            </div>
+
+        </section>
+        <div class="new-box" style="width: 150px; height: 100px; font-size: 30px; margin-top: 40px; margin-left: 700px;   display: flex; justify-content: space-between; position: relative;" > 
+            <i  style="padding-top: 10px;" class="fas fa-arrow-left"></i>
+            <a  target="_blank" href="places.html">BACK</a> 
+            
+        </div>
+
+        <section class="3">
+            <footer> 
+                <div class="footer-wrapper">
+                    <div class="footer-content">
+                        <div class="small-box">
+                            <p class="footer-title-1" style="color:white; padding-top: 37px; font-size: 20px;"  >  QUICK LINKS
+                                <ul class="footer-list" style="padding-top: 30px; color: white; font-size:15px;">
+                                    <li>About Us</li>
+                                    <li>Insider Benefits</li>
+                                    <li>Agent Hub</li>
+                                    <li>Privacy policy</li>
+                                    <li>Terms & Conditions</li>
+                                
+                                </ul>
+    
+                            </p>
+    
+    
+                        </div>
+                        <div class="middle-box">
+                            <h3 class="footer-title" style="color: white; font-size: 20px; padding-bottom: 17px;" >SIGN UP TO RECEIVE THE LATEST OFFERS! </h3>
+                            <div class="footer-box-big" style="display: flex; " > 
+                                <form action="">
+                                    <input type="text"  id="frame" value="email">
+                                    
+                                </form>
+    
+    
+                                <form>
+    
+                                   <input type="button"   value="SUBSCRIBE" onclick="msg()">
+    
+                                   <script>
+                                       function msg(){
+                                           alert("error");
+                                       };
+    
+                                   </script>
+                                </form>
+                            </div>
+    
+                           
+                        </div>
+    
+                        <div class="big-box">
+                            <p class="footer-title-2" style="color: white; font-size:20px; margin-top: 37px;"> CONTACT US
+                                <ul class="footer-list1" style="color: white">
+                                    <li>
+    
+                                    </li>
+                                    <li class="list-fo" style="padding-top: 30px; font-size: 15px;"> the Travelers Pradise <br>
+                                    shaftsbutry Residence, jalan imapact,<br>
+                                    cyber 6, 63000, Selangor, Malayia. </li>
+                                    <li class="list-for" style="padding-top: 30px; font-size: 15px;">Ofice Phone Number : +603 1234 5678  <br> 
+                                        (Mon-fri: 10.00am -17pm) <br>
+                                        Mobile/WhatsAPP : +60 19 409 1234;
+    
+                                    </li>
+    
+                                </ul>
+    
+                            </p>
+    
+                        </div>
+    
+                    </div>
+    
+    
+                </div>
+    
+    
+    
+    
+            </footer>
+    
+    
+    
+    
+        </section>
+    
+
+       
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+        
+
+
+
+
+
